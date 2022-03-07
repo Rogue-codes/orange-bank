@@ -1,0 +1,123 @@
+@import "/src/index.scss";
+.personal{
+    width: 100%;
+    height: auto;
+    .firstSection{
+        width: 100%;
+        height: 100vh;
+        background: url('https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-size: cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-repeat: no-repeat;
+        background-position: 10% 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2%;
+    }
+    .left{
+        width: 40%;
+        height: auto;
+        padding: 2%;
+        background-color: #fff;
+        h1{
+            font-size: 3vw;
+            font-weight: 900;
+            color: #395173;
+        }
+        p{
+            font-size: 1.3vw;
+            width: 90%;
+            line-height: 200%;
+            padding-top: 2%;
+        }
+    }
+    .secondSection{
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+        padding: 2%;
+        .top{
+            h1{
+                font-size: 2vw;
+                font-weight: 900;
+                color: #395173;
+            }
+            p{
+                color: grey;
+                font-size: 1.3vw;
+            }
+        }
+        .bottom{
+            height: 80vh;
+            width: 100%;
+            margin-top: 2%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10%;
+            .cards{
+                width: 30%;
+                height: 50vh;
+                position: relative;
+                box-shadow: 2px 2px 4px grey;
+                transition: all .5s linear;
+                &:hover{
+                    box-shadow: 2px 2px 8px black;
+                    .circle{
+                        background-color: $mainColor;
+                    }
+                    p{
+                        color: $mainColor;
+                    }
+                }
+                .circle{
+                    width: 20%;
+                    left: 45%;
+                    top: -7%;
+                    height: 12vh;
+                    border-radius: 50%;
+                    position: absolute;
+                    background-color: #e8ebf0;
+                    transition: all .5s linear;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .ico{
+                        font-size: 1.5vw;
+                    }
+                }
+                h1{
+                    font-size: 2vw;
+                    font-weight: 900;
+                    color: #395173;
+                    margin-top: 25%;
+                    text-align: center;
+                }
+                p{
+                    font-size: 1.2vw;
+                    padding: 2%;
+                    text-align: center;
+                    transition: all .5s linear;
+                }
+            }
+        }
+    }
+    .firstSect{
+        width: 100%;
+        height: 100vh;
+        background: url('https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+        background-size: cover;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-repeat: no-repeat;
+        background-position: 10% 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2%;
+    }
+}

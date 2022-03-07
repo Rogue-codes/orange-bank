@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Open+Sans:wght@400;500;600;700;800&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Titillium+Web:wght@300;400;600;700;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+$mainColor:#fc4e2b;
+// main starts
+main{
+  width: 100%;
+  height: 100vh;
+  padding: 1.5% 0%;
+  background: url('https://ibanking.titantrustbank.com/ibank1/assets/images/Titan_iBank_Banners-01.png');
+  background-size: cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-repeat: no-repeat;
+  .top{
+    padding: 2%;
+    width: 95%;
+    margin: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      @media (max-width:450px) {
+        width: 10%;
+        height: 15vh;
+      }
+      width: 5%;
+      height: 10vh;
+      color: $mainColor;
+      font-size: 3vw;
+      font-family: 'Gugi', cursive;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .right{
+      @media (max-width:450px) {
+        width: 75%;
+        height: 8vh;
+        gap: 10%;
+        justify-content: center;
+        border-radius: 10px;
+        align-items: center;
+      }
+      background-color: $mainColor;
+      width: 15%;
+      padding: 1%;
+      height: 8vh;
+      display: flex;
+      justify-content: space-between;
+      span{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon{
+          @media (max-width:450px) {
+            font-size: 1.2rem;
+          }
+          color: #fff;
+          font-size: 1.2vw;
+        }
+      }
+      p{
+        @media (max-width:450px) {
+          font-size: 1rem;
+          padding-top: 7%;
+        }
+        font-size: 1.2vw;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+  .center{
+    @media (max-width:450px) {
+      margin-top:30%;
+    }
+    width: 90%; 
+    margin: auto;
+    margin-top: 7%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    h1{
+      @media (max-width:450px) {
+        font-size: 2rem;
+      }
+      font-weight: 900;
+      font-size: 3vw;
+      color: $mainColor;
+    }
+    button{
+      @media (max-width:450px) {
+        font-size: 1rem;
+        width: 80%;
+      }
+      width: 20%;
+      height: 8vh;
+      background: $mainColor;
+      font-size: 1.2vw;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 3%;
+      transition: all .3s linear;
+      cursor: pointer;
+      box-shadow: 2px 8px 8px #7c3d30;
+      &:hover{
+        transform: translateY(-18%);
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  .bottom{
+    @media (max-width:450px) {
+      flex-wrap: wrap;
+    }
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    justify-content: space-evenly;
+    display: flex;
+    .cards{
+      @media (max-width:450px) {
+        min-width: 40%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+      }
+      width: 20%;
+      height: 17vh;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      gap: 10%;
+      align-items: center;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all .3s linear;
+      color: #333;
+      box-shadow: rgba(93, 93, 209, 0.2) 0px 7px 29px 0px;
+      &:nth-child(1){
+        border-top: 3px solid $mainColor;
+      }
+      &:nth-child(2){
+        border-top: 3px solid #00884f;
+      }
+      &:nth-child(3){
+        border-top: 3px solid #5f728e;
+      }
+      &:nth-child(4){
+        border-top: 3px solid $mainColor;
+      }
+      &:hover{
+        transform: scale(1.2);
+      }
+      .icon{
+        @media (max-width:450px) {
+          font-size: 1rem;
+        }
+        color: $mainColor;
+        font-size: 2vw;
+      }
+      p{
+        @media (max-width:450px) {
+          font-size: .8rem;
+        }
+        font-size: 1.2vw;
+        font-weight: 500;
+      }
+    }
+  }
+  .social{
+    @media (max-width:450px) {
+      display: none;
+    }
+    width: 4%;
+    position: fixed;
+    top: 20%;
+    display: flex;
+    flex-direction: column;
+    background: $mainColor;
+    transition: all .3s linear;
+    &:hover{
+      span{
+        transition: all .3s linear;
+        &:nth-child(1){
+          background: #3b579d;
+        }
+        &:nth-child(2){
+          transition: all .3s linear;
+          background: #68120a;
+        }
+        &:nth-child(3){
+          transition: all .3s linear;
+          background: #00aced;
+        }
+        &:nth-child(4){
+          transition: all .3s linear;
+          background: #3b579d;
+        }
+      }
+    }
+    span{
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon{
+        font-size: 1.5vw;
+        color: white;
+      }
+      &:hover{
+        width: 120%;
+      }
+    }
+  }
+}
+// main ends
+
+// home component
+// nav starts
+nav{
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  align-items: center;
+  // border: 5px solid #000;
+  box-shadow: 2px 2px 3px #000;
+  padding: 1%;
+  top: 0;
+  background-color: #fff;
+  bottom: 0;
+  z-index: 20;
+  .logo{
+    width: 5%;
+    height: 10vh;
+    color: $mainColor;
+    font-size: 3vw;
+    font-family: 'Gugi', cursive;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  .right{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    a{
+      font-size: 1.2vw;
+      text-decoration: none;
+      color: #333;
+    }
+    .rightLogo{
+      background-color: $mainColor;
+      width: 18%;
+      padding: 1%;
+      height: 8vh;
+      display: flex;
+      justify-content: space-between;
+      span{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon{
+          color: #fff;
+          font-size: 1.2vw;
+        }
+      }
+      p{
+        font-size: 1.2vw;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+  .animate{
+    width: 15%;
+    height: 30vh;
+    border-top: 4px solid $mainColor;
+    background: white;
+    position: fixed;
+    left: 30%;
+    top: 10%;
+    ul{
+      list-style-type: none;
+      a{
+        text-decoration: none;
+        color: #333;
+        li{
+          padding: 10% 0%;
+        }
+      }
+    }
+  }
+}
+// carousel begins
+.caro{
+  height: auto;
+  position: relative;
+  color: $mainColor;
+  margin-bottom: 10%;
+  .caroItem{
+    width: 100%;
+    height: 100vh !important;
+    .img{
+      width: 100% !important ;
+      height: 100% !important;
+      object-fit: cover;
+    }
+    .caption{
+      color: white;
+      background-color: $mainColor !important;
+      h1{
+        font-size: 2vw !important;
+        font-weight: 900 !important;
+      }
+      p{
+        font-size: 1.5vw !important;
+        font-weight: 500 !important;
+      }
+    }
+  }
+}
+// carousel ends
+
+// mid begins
+.mid{
+  background:  #e9eaef;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: auto;
+}
+// mid ends
+
+// grid begins
+.gridContainer{
+  width: 100%;
+  padding: 2%;
+  height: 110vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr 3fr;
+  gap: 1%;
+  margin-bottom: 5%;
+  .gridItem{
+    background-color: #00aced;
+    padding: 4%;
+    color: rgb(181, 207, 228);
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 15px;
+    transition: all .3s linear;
+    &:hover{
+      transform: scaleX(1.02);
+    }
+    h1{
+      font-size: 1.2vw;
+    }
+    p{
+      font-size: 1.5vw;
+    }
+    &:nth-child(1){
+      grid-row-start: 1 ;
+      grid-row-end: 3;
+      background: url('https://images.pexels.com/photos/5986316/pexels-photo-5986316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      background-size: cover;
+      -webkit-background-size:cover;
+      -moz-background-size:cover;
+      -o-background-size:cover;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(2){
+      background: url('https://images.pexels.com/photos/1683/sky-night-romantic-blue.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      background-size: cover;
+      -webkit-background-size:cover;
+      -moz-background-size:cover;
+      -o-background-size:cover;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(3){
+      background: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      background-size: cover;
+      -webkit-background-size:cover;
+      -moz-background-size:cover;
+      -o-background-size:cover;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(4){
+      background: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+      background-size: cover;
+      -webkit-background-size:cover;
+      -moz-background-size:cover;
+      -o-background-size:cover;
+      background-repeat: no-repeat;
+    }
+    &:nth-child(5){
+      background: url('https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+      background-size: cover;
+      -webkit-background-size:cover;
+      -moz-background-size:cover;
+      -o-background-size:cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+// grid ends
+
+//banner start
+.banner{
+  width:95%;
+  margin: auto;
+  border-radius: 15px;
+  height: 40vh;
+  background:  linear-gradient(90deg, rgba(0,0,0,1) 42%, rgba(2,1,18,0.6871790952709209) 77%, rgba(1,12,14,0.5051062661392682) 100%), url('https://www.neverendingvoyage.com/wp-content/uploads/2015/07/erin-away-luggage.jpg');
+  background-size: cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-repeat: no-repeat;
+  background-position: 10% 30%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  h1{
+    font-size: 2vw;
+    font-weight: 700;
+    color: $mainColor;
+    width: 70%;
+    padding: 2%;
+  }
+  button{
+    width: 15%;
+    height: 10vh;
+    background: $mainColor;
+    color: white;
+    font-size: 1.2vw;
+    margin-left: 2%;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+  }
+}
+//banner ends
+
+//second flex
+.secondFlex{
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  display: flex;
+  .left{
+    width: 50%;
+    height:auto;
+    padding: 2%;
+    h1{
+      font-weight: 900;
+      color: #395173;
+    }
+    span{
+      color: $mainColor;
+      height: 1vw;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    p{
+      font-size: 1.3vw;
+      color: #333;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    button{
+      width: 25%;
+      height: 10vh;
+      background:$mainColor;
+      color: white;
+      border-radius: 12px;
+      font-weight: 500;
+      border: none;
+      font-size: 1.2vw;
+    }
+  }
+  .right{
+    width: 50%;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-bottom: 4%;
+    }
+  }
+}
+// second flex 
+
+// third flex start
+.thirdFlex{
+  width: 100%;
+  margin-top: 15%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  .left{
+    width: 50%;
+    height:auto;
+    padding: 2%;
+    h1{
+      font-weight: 900;
+      color: #395173;
+      span{
+        color: $mainColor;
+      }
+    }
+    span{
+      color: $mainColor;
+      height: 1vw;
+      padding-top: 2%;
+      padding-bottom: 2%;
+    }
+    p{
+      font-size: 1.3vw;
+      color: #333;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      color: $mainColor;
+      font-weight: 500;
+    }
+    button{
+      width: 25%;
+      height: 10vh;
+      background:$mainColor;
+      color: white;
+      border-radius: 12px;
+      font-weight: 500;
+      border: none;
+      font-size: 1.2vw;
+    }
+  }
+  .right{
+    width: 50%;
+    height: 80vh;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-bottom: 4%;
+    }
+  }
+}
+// third flex end
+
+// fourth flex start
+.fouthFlex{
+  padding: 3%;
+  margin-top: 5%;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  .left{
+    width: 50%;
+    height: 100%;
+    background: url('https://titantrustbank.com/wp-content/uploads/2020/12/Director-Photo-1-800x224.png');
+    transition: all .3s linear;
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 2px 2px 4px grey;
+    }
+  }
+  .right{
+    width: 50%;
+    height: 100%;
+    background: url('https://titantrustbank.com/wp-content/uploads/2021/06/2020_report_banner-2-800x224.png');
+    transition: all .3s linear;
+    &:hover{
+      transform: scale(1.05);
+      box-shadow: 2px 2px 4px grey;
+    }
+  }
+}
+// fourth flex end
+
+// banner2 starts
+.banner2{
+  width: 95%;
+  height: 40vh;
+  margin: auto;
+  background: $mainColor;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 6vw;
+  font-weight: 900;
+  padding-left: 2%;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  margin-bottom: 4%;
+}
+//banner2 end
+
+// footer begins
+footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  .top{
+    height: 50%;
+    width: 100%;
+    background: #e9eaef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 2%;
+    .left{
+      width: 50%;
+      height: 50%;
+      background: #1c3150;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      p{
+        font-size: 6vw;
+        color: $mainColor;
+        font-weight: 900;
+      }
+      span{
+        font-size: 1.2vw;
+        color: rgb(180, 178, 178);
+
+      }
+    }
+    .right{
+      width: 50%;
+      height: 50%;
+      background: $mainColor;
+      padding: 1% 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1{
+        font-size: 1.5vw;
+        color: #fff;
+      }
+      p{
+        font-size: 1vw;
+        color: #fff;
+      }
+    }
+  }
+  .bottom{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    .left{
+      padding: 2%;
+      width: 40%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 5%;
+      .logo{
+        width: 15%;
+        height: 15%;
+        margin-bottom: 2%;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      p{
+        line-height: 130%;
+      }
+      .ico{
+        color: $mainColor;
+        font-size: 2vw;
+        margin-right: 2%;
+      }
+    }
+    .right{
+      padding: 2%;
+      width: 60%;
+      height: auto;
+      display: flex;
+      ul{
+        list-style-type: none;
+        li{
+          font-size: 1.1vw;
+          margin-bottom: 6%;
+          margin-top: 6%;
+          transition: all .5s linear;
+          cursor: pointer;
+          &:hover{
+            color: $mainColor;
+          }
+          &:nth-child(1){
+            font-size: 1.5vw;
+            margin-bottom: 3%;
+            color: #1c3150;
+          }
+        }
+      }
+    }
+  }
+}
+// footer ends
+
