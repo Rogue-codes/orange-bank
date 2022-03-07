@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faDatabase, faFile } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import '../Views/personal.scss'
 import Footer from '../../Footer'
 function Sme() {
