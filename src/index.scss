@@ -233,20 +233,26 @@ main{
 // home component
 // nav starts
 nav{
+  @media (max-width:450px) {
+    padding: 4%;
+  }
   width: 100%;
   height: 15vh;
   display: flex;
   justify-content: space-between;
   position: sticky;
   align-items: center;
-  // border: 5px solid #000;
-  box-shadow: 2px 2px 3px #000;
+  box-shadow: 2px 2px 3px rgb(138, 133, 133);
   padding: 1%;
   top: 0;
   background-color: #fff;
   bottom: 0;
   z-index: 20;
   .logo{
+    @media (max-width:450px) {
+      width: 10%;
+      height: 15vh;
+    }
     width: 5%;
     height: 10vh;
     color: $mainColor;
@@ -259,6 +265,9 @@ nav{
     }
   }
   .right{
+    @media (max-width:450px) {
+      display: none;
+    }
     width: 80%;
     display: flex;
     justify-content: center;
@@ -297,7 +306,6 @@ nav{
     width: 15%;
     height: 30vh;
     border-top: 4px solid $mainColor;
-    background: white;
     position: fixed;
     left: 30%;
     top: 10%;
@@ -310,6 +318,49 @@ nav{
           padding: 10% 0%;
         }
       }
+    }
+  }
+  .Animated{
+    @media (max-width:480px) {
+      display: block;
+    }
+    display: none;
+    width: 100%;
+    height: auto;
+    background-color: rgb(247, 241, 241);
+    position: absolute;
+    box-shadow: 2px 2px 4px grey;
+    margin-left: -4%;
+    z-index: 60;
+    a{
+      display: block;
+      font-size: 1.2rem;
+      margin: 2%;
+      padding: 2% 0%;
+      border-bottom: 1px solid grey;
+      text-decoration: none;
+      color: $mainColor;
+    }
+  }
+  .firstAimate{
+    @media (max-width:480px) {
+      display: block;
+    }
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #010214a6;
+  }
+  .iconAni{
+    display: none;
+    @media (max-width:480px) {
+      display: block;
+      font-size: 2rem;
+      color: grey;
     }
   }
 }
@@ -333,10 +384,16 @@ nav{
       h1{
         font-size: 2vw !important;
         font-weight: 900 !important;
+        @media (max-width:480px) {
+          font-size: 1.5rem !important;
+        }
       }
       p{
         font-size: 1.5vw !important;
         font-weight: 500 !important;
+        @media (max-width:480px) {
+          font-size: 1rem !important;
+        }
       }
     }
   }
@@ -354,6 +411,11 @@ nav{
 
 // grid begins
 .gridContainer{
+  @media (max-width:480px) {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
   width: 100%;
   padding: 2%;
   height: 110vh;
@@ -363,6 +425,9 @@ nav{
   gap: 1%;
   margin-bottom: 5%;
   .gridItem{
+    @media (max-width:480px) {
+      margin-top: 5%;
+    }
     background-color: #00aced;
     padding: 4%;
     color: rgb(181, 207, 228);
@@ -379,6 +444,17 @@ nav{
       font-size: 1.5vw;
     }
     &:nth-child(1){
+      @media (max-width:480px) {
+        background-position: 10% 70%;
+        height: 120vh;
+        h3{
+          font-size: 2rem;
+        }
+        p{
+          font-size: 1.2rem;
+        }
+        
+      }
       grid-row-start: 1 ;
       grid-row-end: 3;
       background: url('https://images.pexels.com/photos/5986316/pexels-photo-5986316.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
@@ -389,6 +465,12 @@ nav{
       background-repeat: no-repeat;
     }
     &:nth-child(2){
+      @media (max-width:480px) {
+        height: 90vh;
+        p{
+          font-size: 1.2rem;
+        }
+      }
       background: url('https://images.pexels.com/photos/1683/sky-night-romantic-blue.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
       background-size: cover;
       -webkit-background-size:cover;
@@ -397,6 +479,12 @@ nav{
       background-repeat: no-repeat;
     }
     &:nth-child(3){
+      @media (max-width:480px) {
+        height: 70vh;
+        p{
+          font-size: 1.2rem;
+        }
+      }
       background: url('https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
       background-size: cover;
       -webkit-background-size:cover;
@@ -405,6 +493,12 @@ nav{
       background-repeat: no-repeat;
     }
     &:nth-child(4){
+      @media (max-width:480px) {
+        height: 70vh;
+        p{
+          font-size: 1.2rem;
+        }
+      }
       background: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
       background-size: cover;
       -webkit-background-size:cover;
@@ -413,6 +507,12 @@ nav{
       background-repeat: no-repeat;
     }
     &:nth-child(5){
+      @media (max-width:480px) {
+        height: 70vh;
+        p{
+          font-size: 1.2rem;
+        }
+      }
       background: url('https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
       background-size: cover;
       -webkit-background-size:cover;
@@ -426,6 +526,10 @@ nav{
 
 //banner start
 .banner{
+  @media (max-width:480px) {
+    height: 60vh;
+    padding: 2%;
+  }
   width:95%;
   margin: auto;
   border-radius: 15px;
@@ -442,6 +546,10 @@ nav{
   justify-content: center;
   flex-direction: column;
   h1{
+    @media (max-width:480px) {
+      font-size: 1.5rem;
+      width: 100%;
+    }
     font-size: 2vw;
     font-weight: 700;
     color: $mainColor;
@@ -449,6 +557,10 @@ nav{
     padding: 2%;
   }
   button{
+    @media (max-width:480px) {
+      font-size: 1rem;
+      width: 70%;
+    }
     width: 15%;
     height: 10vh;
     background: $mainColor;
@@ -464,15 +576,25 @@ nav{
 
 //second flex
 .secondFlex{
+  @media (max-width:480px) {
+    flex-wrap: wrap;
+  }
   width: 100%;
   height: auto;
   padding-top: 5%;
   display: flex;
   .left{
+    @media (max-width:480px) {
+      width: 90%;
+      margin: auto;
+    }
     width: 50%;
     height:auto;
     padding: 2%;
     h1{
+      @media (max-width:480px) {
+        font-size: 1.5rem;
+      }
       font-weight: 900;
       color: #395173;
     }
@@ -487,8 +609,15 @@ nav{
       color: #333;
       padding-top: 2%;
       padding-bottom: 2%;
+      @media (max-width:480px) {
+        font-size: 1.2rem;
+      }
     }
     button{
+      @media (max-width:480px) {
+        width: 75%;
+        font-size: .9rem;
+      }
       width: 25%;
       height: 10vh;
       background:$mainColor;
@@ -500,6 +629,11 @@ nav{
     }
   }
   .right{
+    @media (max-width:480px) {
+      width: 90%;
+      margin: auto;
+      margin-top: 10%;
+    }
     width: 50%;
     height: 100%;
     img{
@@ -510,16 +644,24 @@ nav{
     }
   }
 }
-// second flex 
+// second flex ends
 
 // third flex start
 .thirdFlex{
+  @media (max-width:480px) {
+    flex-wrap: wrap;
+  }
   width: 100%;
   margin-top: 15%;
   height: auto;
   display: flex;
   flex-direction: row-reverse;
   .left{
+    @media (max-width:480px) {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 20%;
+    }
     width: 50%;
     height:auto;
     padding: 2%;
@@ -537,6 +679,9 @@ nav{
       padding-bottom: 2%;
     }
     p{
+      @media (max-width:480px) {
+        font-size: .8rem;
+      }
       font-size: 1.3vw;
       color: #333;
       padding-top: 2%;
@@ -545,6 +690,10 @@ nav{
       font-weight: 500;
     }
     button{
+      @media (max-width:480px) {
+        width: 70%;
+        font-size: 1rem;
+      }
       width: 25%;
       height: 10vh;
       background:$mainColor;
@@ -556,6 +705,10 @@ nav{
     }
   }
   .right{
+    @media (max-width:480px) {
+      width: 90%;
+      margin: auto;
+    }
     width: 50%;
     height: 80vh;
     img{
@@ -570,6 +723,9 @@ nav{
 
 // fourth flex start
 .fouthFlex{
+  @media (max-width:480px) {
+    flex-direction: column;
+  }
   padding: 3%;
   margin-top: 5%;
   width: 100%;
@@ -578,6 +734,10 @@ nav{
   justify-content: center;
   gap: 5%;
   .left{
+    @media (max-width:480px) {
+      width: 100%;
+      margin: auto;
+    }
     width: 50%;
     height: 100%;
     background: url('https://titantrustbank.com/wp-content/uploads/2020/12/Director-Photo-1-800x224.png');
@@ -588,6 +748,10 @@ nav{
     }
   }
   .right{
+    @media (max-width:480px) {
+      width: 100%;
+      margin: auto;
+    }
     width: 50%;
     height: 100%;
     background: url('https://titantrustbank.com/wp-content/uploads/2021/06/2020_report_banner-2-800x224.png');
@@ -602,6 +766,9 @@ nav{
 
 // banner2 starts
 .banner2{
+  @media (max-width:480px) {
+    height: 20vh;
+  }
   width: 95%;
   height: 40vh;
   margin: auto;
@@ -625,6 +792,9 @@ footer{
   display: flex;
   flex-direction: column;
   .top{
+    @media (max-width:480px) {
+      flex-direction: column;
+    }
     height: 50%;
     width: 100%;
     background: #e9eaef;
@@ -634,6 +804,10 @@ footer{
     gap: 5%;
     padding: 2%;
     .left{
+      @media (max-width:480px) {
+        width: 100%;
+        margin: auto;
+      }
       width: 50%;
       height: 50%;
       background: #1c3150;
@@ -646,12 +820,20 @@ footer{
         font-weight: 900;
       }
       span{
+        @media (max-width:480px) {
+          font-size: .6rem;
+        }
         font-size: 1.2vw;
         color: rgb(180, 178, 178);
 
       }
     }
     .right{
+      @media (max-width:480px) {
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+      }
       width: 50%;
       height: 50%;
       background: $mainColor;
@@ -660,20 +842,32 @@ footer{
       flex-direction: column;
       justify-content: center;
       h1{
+        @media (max-width:480px) {
+          font-size: .9rem;
+        }
         font-size: 1.5vw;
         color: #fff;
       }
       p{
+        @media (max-width:480px) {
+          font-size: .6rem;
+        }
         font-size: 1vw;
         color: #fff;
       }
     }
   }
   .bottom{
+    @media (max-width:480px) {
+      flex-direction: column;
+    }
     height: 50%;
     width: 100%;
     display: flex;
     .left{
+      @media (max-width:480px) {
+        width: 100%;
+      }
       padding: 2%;
       width: 40%;
       height: auto;
@@ -692,15 +886,26 @@ footer{
         }
       }
       p{
+        @media (max-width:480px) {
+          font-size: .7rem;
+        }
         line-height: 130%;
       }
       .ico{
+        @media (max-width:480px) {
+          font-size: 1rem;
+          margin-left: 12%;
+        }
         color: $mainColor;
         font-size: 2vw;
         margin-right: 2%;
       }
     }
     .right{
+      @media (max-width:480px) {
+        flex-direction: column;
+        width: 100%;
+      }
       padding: 2%;
       width: 60%;
       height: auto;
@@ -708,6 +913,9 @@ footer{
       ul{
         list-style-type: none;
         li{
+          @media (max-width:480px) {
+            font-size: .4rem;
+          }
           font-size: 1.1vw;
           margin-bottom: 6%;
           margin-top: 6%;
@@ -717,6 +925,9 @@ footer{
             color: $mainColor;
           }
           &:nth-child(1){
+            @media (max-width:480px) {
+              font-size: .9rem;
+            }
             font-size: 1.5vw;
             margin-bottom: 3%;
             color: #1c3150;

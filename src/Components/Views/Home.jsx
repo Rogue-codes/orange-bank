@@ -41,7 +41,7 @@ function Home() {
         <div className="banner">
           <h1>Purchase your PTA and BTA in Dollars, Pounds or Euros at any Titan Trust Bank Branch Nationwide</h1>
           <button>Learn more</button>
-        </div>
+        </div> 
         </div>
         <div className="secondFlex">
           <div className="left">
@@ -79,7 +79,7 @@ function Home() {
           <div className="right">
             <img src="/m1.jpg" alt="" />
           </div>
-        </div>
+        </div> 
 
         <div className="fouthFlex">
           <div className="left">
@@ -95,7 +95,7 @@ function Home() {
         <div className="banner2">
         <p>ORANGE STORIES</p>
         </div> 
-        <Footer/>
+        <Footer/> 
     </div>
   )
 }
