@@ -6,6 +6,49 @@
   font-family: 'Raleway', sans-serif;
 }
 $mainColor:#fc4e2b;
+// popup starts
+.pop{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background: rgba(0, 0, 0, 0.849);
+  position: fixed;
+  transition: all .5s linear;
+  .popChild{
+    @media (max-width:450px) {
+      width: 90%;
+    }
+    width: 30%;
+    height: 40vh;
+    background:$mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    position: relative;
+    p{
+      font-size: 1.4vw;
+      line-height: 150%;
+      color: white;
+    }
+    .cancel{
+      font-size: 2vw;
+      color: white;
+      position: absolute;
+      top: 0;
+      left: 90%;
+      padding: 4px;
+      cursor: pointer;
+    }
+  }
+}
+.removePop{
+  display: none;
+}
+// popup ends
 // main starts
 main{
   width: 100%;
