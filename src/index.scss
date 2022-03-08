@@ -306,9 +306,11 @@ nav{
     width: 15%;
     height: 30vh;
     border-top: 4px solid $mainColor;
+    background: #fff;
     position: fixed;
+    box-shadow: 2px 2px 4px grey;
     left: 30%;
-    top: 10%;
+    top: 15%;
     ul{
       list-style-type: none;
       a{
