@@ -8,7 +8,7 @@ function Popup() {
         setTimeout(()=>(
             showPopUP(true)
         ),3000)
-    },[popUP])
+    },[])
   return (
     <div className={popUP ? 'pop' : 'pop removePop'}  onClick={()=>{showPopUP(false)}}>
         <div className="popChild">
