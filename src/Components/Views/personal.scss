@@ -74,12 +74,12 @@
         .bottom{
             @media (max-width:450px) {
                 height: auto;
+                flex-wrap: wrap;
             }
-            height: 80vh;
+            height: auto;
             width: 100%;
             margin-top: 2%;
             display: flex;
-            flex-wrap: wrap;
             justify-content: flex-start;
             align-items: center;
             gap: 10%;
@@ -108,7 +108,7 @@
                         left: 40%;
                     }
                     width: 20%;
-                    left: 45%;
+                    left: 40%;
                     top: -7%;
                     height: 12vh;
                     border-radius: 50%;
