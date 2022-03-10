@@ -1,15 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from './Nav'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import '../Views/personal.scss'
 import Footer from '../../Footer'
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
+
 function OurCards() {
+  useEffect(()=>{
+    Aos.init({duration : 3000})
+  },[])
   return (
     <div className='personal'>
       <Nav/>
       <div className="firstSec">
-        <div className="left">
+        <div className="left" data-aos="fade-right">
           <h1>ORANGE Personal Banking Cards</h1>
           <p>With your cards you are a TITAN, anywhere and everywhere you go.</p>
         </div>

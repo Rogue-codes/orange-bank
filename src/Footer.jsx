@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedinIn, faTwitter }  from '@fortawesome/free-brands-svg-icons'
 import { Link } from 'react-router-dom'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 function Footer() {
+    useEffect(()=>{
+      Aos.init({duration : 3000})
+    },[])
   return (
-    <footer>
+    <footer data-aos="fade-up">
         <div className="top">
         <div className="left">
             <p>*933#</p>

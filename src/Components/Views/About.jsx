@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from './Nav'
 import '../Views/about.scss'
 import Ityped from './Ityped'
@@ -6,18 +6,23 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faDatabase, faFile } from '@fortawesome/free-solid-svg-icons'
 import Directors from '../Directors'
 import Footer from '../../Footer'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function About() {
+  useEffect(()=>{
+    Aos.init({duration : 3000})
+  },[])
   return (
     <div className='about'>
       <Nav/>
       <div className="firstSection">
-        <div className="left">
+        <div className="left" data-aos="fade-right">
           <h1>About ORANGE</h1>
           <p>Orange Bank was established on the 12th of December, 2018 and started operating fully as a commercial National Bank after obtaining its National Banking license on the 26th of April, 2019.​</p>
         </div>
 
-        <div className="right">
+        <div className="right" data-aos="fade-left">
           
         </div>
       </div>
@@ -28,23 +33,23 @@ function About() {
         <p>Our team are best-in-class Bankers, supporting the execution of the Bank’s strategy while delivering on our service promise. Our branch network is structured to uniquely enhance quality service delivery with great customer experience.</p>
       </div>
       <div className="thirdSection">
-        <div className="left">
+        <div className="left" data-aos="fade-right">
           <h1>Our Vision</h1>
           <p>To be Africa’s most trusted financial institution</p>
         </div>
 
-        <div className="right">
+        <div className="right" data-aos="fade-left">
           <h1>Our Mission</h1>
           <p>To create and manage value through a combination of empathy, talent and superior technology by providing transparent and convenient solutions for stakeholders across all markets</p>
         </div>
       </div>
-      <div className="fourthSection">
+      <div className="fourthSection" data-aos="fade-up">
       <h1>We are Proudly african</h1>
           <button>Learn more</button>
       </div>
       <div className="fifthSection">
       <h1>Our Philosophy</h1>
-        <div className="inner">
+        <div className="inner" data-aos="fade-left">
         <h2>We make them switch, we make them stay</h2>
         <p>How do we do this?</p>
         <ul>
@@ -55,19 +60,19 @@ function About() {
       </div>
       <div className="ityped">
       <Ityped/>
-      <div className="right">
+      <div className="right" data-aos="fade-left">
         
       </div>
       </div>
       <div className="sixthSection">
-        <div className="card">
+        <div className="card" data-aos="fade-up">
           <div className="circle">
             <FontAwesomeIcon className='ico' icon={faFile}></FontAwesomeIcon>
           </div>
           <h1>Year Established</h1>
           <p>12th of December, 2018</p>
         </div>
-        <div className="card">
+        <div className="card" data-aos="fade-up">
             <div className="circle">
               <FontAwesomeIcon className='ico' icon={faDatabase}></FontAwesomeIcon>
             </div>

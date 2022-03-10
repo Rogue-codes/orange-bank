@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import CarouselBootstrap from './CarouselBootstrap'
 import Nav from './Nav'
 import { Link } from 'react-router-dom'
 import Footer from '../../Footer'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function Home() {
+  useEffect(()=>{
+    Aos.init({duration : 3000})
+  },[])
   return (
     <div className='home'>
         <Nav/>
         <CarouselBootstrap/>
-        <div className="mid">
+        <div className="mid"  data-aos="fade-up">
         <div className="gridContainer">
           <div className="gridItem">
           <h3>Corporate Banking</h3>
@@ -44,7 +49,7 @@ function Home() {
         </div> 
         </div>
         <div className="secondFlex">
-          <div className="left">
+          <div className="left" data-aos="fade-right">
             <h1>
             Transact business your <br /> own way, with our ORANGE <br /> Cards.
             </h1>
@@ -57,13 +62,13 @@ function Home() {
             <Link to='/personal'><button>View more</button></Link>
           </div>
 
-          <div className="right">
+          <div className="right" data-aos="fade-left">
             <img src="/o1.png" alt="" />
           </div>
         </div>
 
         <div className="thirdFlex">
-          <div className="left">
+          <div className="left" data-aos="fade-right">
             <h1>
             A conversation with <span>Sheriff Olukoya Ibun</span>, CEO/Managing Director of Orange Bank.
             </h1>
@@ -76,23 +81,23 @@ function Home() {
             <Link to='/personal'><button>View</button></Link>
           </div>
 
-          <div className="right">
+          <div className="right" data-aos="fade-left">
             <img src="/m1.jpg" alt="" />
           </div>
         </div> 
 
         <div className="fouthFlex">
-          <div className="left">
+          <div className="left" data-aos="flip-up">
             
           </div>
 
-          <div className="right">
+          <div className="right" data-aos="flip-up">
             
           </div>
           
         </div>
 
-        <div className="banner2">
+        <div className="banner2" data-aos="fade-right">
         <p>ORANGE STORIES</p>
         </div> 
         <Footer/> 

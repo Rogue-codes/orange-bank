@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import Direct from './Direct'
 import {All,Directos,MGT} from './Views/DirectorsList'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function Directors() {
+  useEffect(()=>{
+    Aos.init({duration : 3000})
+  },[])
     const [selected, setSelected] = useState('all')
     const [data, setData] = useState([])
     const List =[
@@ -40,7 +45,7 @@ function Directors() {
 
     },[selected])
   return (
-    <div className='directors'>
+    <div className='directors' data-aos="fade-up">
         <ul>
             {List.map((d)=>(
                 <Direct actively={selected===d.id} tittle={d.tittle} setSelected={setSelected} id={d.id}/>

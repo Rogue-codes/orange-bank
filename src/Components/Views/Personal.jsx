@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Nav from './Nav'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faDatabase, faFile } from '@fortawesome/free-solid-svg-icons'
 import '../Views/personal.scss'
 import Footer from '../../Footer'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 function Personal() {
+  useEffect(()=>{
+    Aos.init({duration : 3000})
+  },[])
   return (
     <div className='personal'>
       <Nav/>
       <div className="firstSection">
-        <div className="left">
+        <div className="left" data-aos="fade-right">
           <h1>Personal Banking</h1>
           <p>We are your reliable partners. We create tailored products and services that fit your evolving lifestyle.</p>
         </div>
