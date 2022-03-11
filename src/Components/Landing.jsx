@@ -31,10 +31,10 @@ function Landing() {
             </div>
 
             <div className="bottom">
-                <Link to='/personal' className="cards" data-aos="fade-in" data-aos-duration="3000"><FontAwesomeIcon className='icon' icon={faUser}></FontAwesomeIcon><p>PERSONAL <br /> BANKING</p></Link>
-                <Link to='/corporate' className="cards" data-aos="fade-in" data-aos-duration="3000"><FontAwesomeIcon className='icon' icon={faBuilding}></FontAwesomeIcon><p>CORPORATE <br /> BANKING</p></Link>
-                <Link to='/sme' className="cards" data-aos="fade-in" data-aos-duration="3000"><FontAwesomeIcon className='icon' icon={faShop}></FontAwesomeIcon><p>SME <br /> BANKING</p></Link>
-                <Link to='/ourcards' className="cards" data-aos="fade-in" data-aos-duration="3000"><FontAwesomeIcon className='icon' icon={faCreditCard}></FontAwesomeIcon><p>OUR <br /> CARD</p></Link>
+                <Link to='/personal' className="cards"><FontAwesomeIcon className='icon' icon={faUser}></FontAwesomeIcon><p>PERSONAL <br /> BANKING</p></Link>
+                <Link to='/corporate' className="cards"><FontAwesomeIcon className='icon' icon={faBuilding}></FontAwesomeIcon><p>CORPORATE <br /> BANKING</p></Link>
+                <Link to='/sme' className="cards"><FontAwesomeIcon className='icon' icon={faShop}></FontAwesomeIcon><p>SME <br /> BANKING</p></Link>
+                <Link to='/ourcards' className="cards"><FontAwesomeIcon className='icon' icon={faCreditCard}></FontAwesomeIcon><p>OUR <br /> CARD</p></Link>
             </div>
 
         <div className="social">
