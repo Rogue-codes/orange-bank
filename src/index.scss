@@ -20,6 +20,7 @@ $mainColor:#fc4e2b;
   .popChild{
     @media (max-width:450px) {
       width: 90%;
+      height: 50vh;
     }
     width: 30%;
     border-radius: 15px;
@@ -31,11 +32,17 @@ $mainColor:#fc4e2b;
     padding: 2%;
     position: relative;
     p{
+      @media (max-width:450px) {
+        font-size: .8rem;
+      }
       font-size: 1.4vw;
       line-height: 150%;
       color: white;
     }
     .cancel{
+      @media (max-width:450px) {
+        font-size: 1rem;
+      }
       font-size: 2vw;
       color: white;
       position: absolute;
