@@ -6,7 +6,7 @@ import "aos/dist/aos.css"
 
 function Directors() {
   useEffect(()=>{
-    Aos.init({duration : 3000})
+    Aos.init({duration : 1000})
   },[])
     const [selected, setSelected] = useState('all')
     const [data, setData] = useState([])

@@ -11,7 +11,7 @@ import "aos/dist/aos.css"
 
 function About() {
   useEffect(()=>{
-    Aos.init({duration : 3000})
+    Aos.init({duration : 1000})
   },[])
   return (
     <div className='about'>

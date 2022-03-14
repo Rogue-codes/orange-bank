@@ -10,7 +10,7 @@ import "aos/dist/aos.css"
 
 function OurCards() {
   useEffect(()=>{
-    Aos.init({duration : 3000})
+    Aos.init({duration : 1000})
   },[])
   return (
     <div className='personal'>
